@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classe Ultra Fofura</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #ff7ac6;
+      --secondary: #ffb6e6;
+      --dark: #111827;
+      --light: #f9fafb;
+      --card: rgba(255,255,255,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      padding: 25px 0;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: var(--primary);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .btn-voltar {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      padding: 12px 22px;
+      border-radius: 999px;
+      transition: 0.3s;
+    }
+
+    .btn-voltar:hover {
+      transform: scale(1.05);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 70px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .hero p {
+      color: #ccc;
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .cute-box {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 30px;
+      padding: 40px;
+      margin-bottom: 80px;
+      backdrop-filter: blur(10px);
+    }
+
+    .cute-box img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    .cute-box h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .cute-box p {
+      line-height: 1.8;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      margin-top: 30px;
+    }
+
+    .stats p {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .bar {
+      width: 100%;
+      height: 14px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Classe Ultra Fofura 😺</h1>
+
+      <a href="index.html" class="btn-voltar">
+        Voltar
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Gato Ultra Fofo</h1>
+
+    <p>
+      Uma criatura tão absurdamente adorável que cientistas ainda tentam entender como tanta fofura cabe em um único ser vivo.
+    </p>
+  </section>
+
+  <section class="container">
+
+    <div class="cute-box">
+
+      <img src="./gatinho.jpg" alt="Gato Ultra Fofo">
+
+      <h2>Descrição Científica</h2>
+
+      <p>
+        O Gato Ultra Fofo possui habilidades avançadas de manipulação emocional humana através de olhares pequenos e miados estratégicos.
+      </p>
+
+      <p>
+        Sua principal técnica consiste em se aproximar lentamente, sentar no colo da vítima e imediatamente ativar o modo ronronador supremo.
+      </p>
+
+      <p>
+        Estudos recentes indicam que níveis extremos de fofura podem reduzir produtividade humana em até 97%.
+      </p>
+
+      <div class="stats">
+
+        <p>Nível de Fofura</p>
+        <div class="bar">
+          <div class="fill" style="width: 100%;"></div>
+        </div>
+
+        <p>Poder de Manipulação Emocional</p>
+        <div class="bar">
+          <div class="fill" style="width: 96%;"></div>
+        </div>
+
+        <p>Capacidade de Destruir sua Rotina</p>
+        <div class="bar">
+          <div class="fill" style="width: 92%;"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Instituto Nacional de Estudos Gatísticos © 2026</p>
+  </footer>
+
+</body>
+</html>
